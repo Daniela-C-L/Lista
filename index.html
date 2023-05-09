@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Paises</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <h1>lista de Paises</h1>
+
+        <input type="text" class="form-control w-25 mt-5" id="filtrar-paises" placeholder="Buscar Paises">
+        <div class="d-flex mt-1">
+            <input type="text" class="form-control w-25 filtrar-capital" placeholder="Buscar Capital" >
+            <button class="btn btn-dark text-light" id="filtrar-capital" value="">Buscar</button>
+        </div>
+        <div class="d-flex mt-1">
+            <select class="form-control w-25 filtrar-regiao">
+                <option value="" disabled selected>Escolha uma Região</option> 
+                <option value="africa">Africa</option>    
+                <option value="asia">Asia</option>    
+                <option value="americas">América</option>    
+                <option value="europe">Europa</option>    
+                <option value="oceania">Oceania</option>    
+            </select>
+                <button class="btn btn-dark text-light" id="filtrar-regiao">Buscar</button>
+        </div>
+        <hr>
+
+        <section class="d-flex flex-wrap" id="listaPaises"></section>
+
+        <div class="mt-3 d-flex justify-content-center">
+            <button class="btn btn-primary mr-1" id="anterior">anterior</button>
+
+                <span id="contador-pagina"></span>
+                <button class="btn btn-primary ml-1" id="proximo">Proximo</button>
+
+        </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/filtro.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
